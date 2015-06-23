@@ -6,7 +6,7 @@ app.controller('MainController', ['$scope', 'places', function($scope, places) {
 				};
 				
 				places.success(function(data) {
-          	$scope.geodata = data
+          	$scope.geodata = data;
 						$scope.mapMarkers = geodataToMarkers($scope.geodata);
 				});
-}]); 
+}]);
